@@ -1,0 +1,29 @@
+{
+  "name": "heroku-sample",
+  "version": "1.0.0",
+  "description": "a sample application to deploy to heroku",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junreycloudstrife/heroku-sample.git"
+  },
+  "keywords": [
+    "heroku",
+    "deploy",
+    "sample"
+  ],
+  "author": "Jun Rey Ansing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junreycloudstrife/heroku-sample/issues"
+  },
+  "homepage": "https://github.com/junreycloudstrife/heroku-sample#readme",
+
+  "engines": {
+    "node": "10.16"
+  }
+
+}
