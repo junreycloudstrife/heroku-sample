@@ -1,0 +1,41 @@
+Steps for creating project with Node using Git and Heroku
+
+1. Create online repository with README and .gitignore files
+    http://github.com/junreycloudstrife/heroku-sample 
+2. Clone the repository
+    git clone http://github.com/junreycloudstrife/heroku-sample.git
+3. Setup package.json inside repository
+    cd heroku-sample
+    npm init
+4. Get the local Node version
+    node --version
+5. Add this code in package.json then specify the local version of Node
+        "engines": {
+            "node": "10.x"
+        }
+6. Create the file Procfile (no file extension) then add this line
+    web: node index.js
+7. Set the port in index.js to process.env.PORT
+    app.listen(process.env.PORT);
+8. Install packages and save it to package.json
+    npm install --save <package-name>
+9. Start application locally
+    heroku local web
+    (open http://localhost:5000 in the browser)
+10. Add the following to .gitignore (if not already included)
+    node_modules/
+    npm-debug.log
+    .DS_Store
+    *.env/
+11. Commit changes to online repository
+    git add .
+    git commit -m "Comment"
+    git push
+12. Create heroku online app and repository
+    heroku create
+13. Deploy to heroku
+    git push heroku master
+14. Check the logs for errors
+    heroku logs --tail
+15. Open the deployed project to browser
+    heroku open
