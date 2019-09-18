@@ -2,6 +2,10 @@
   "name": "heroku-sample",
   "version": "1.0.0",
   "description": "a sample application to deploy to heroku",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^2.2.0"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
