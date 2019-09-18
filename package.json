@@ -25,9 +25,7 @@
     "url": "https://github.com/junreycloudstrife/heroku-sample/issues"
   },
   "homepage": "https://github.com/junreycloudstrife/heroku-sample#readme",
-
   "engines": {
     "node": "10.16"
   }
-
 }
