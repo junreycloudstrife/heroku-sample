@@ -46,5 +46,11 @@ Steps for creating project with Node using Git and Heroku
     heroku ps:scale web=1
 18. Open the deployed project to browser
     heroku open
+
+For troubleshooting
 19. Check the logs for errors
     heroku logs --tail
+20. Set git remote
+    heroku git:remote --app heroku-sample-v1
+21. Rename the app
+    heroku apps:rename newname
