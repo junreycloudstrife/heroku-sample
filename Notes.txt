@@ -54,3 +54,8 @@ For troubleshooting
     heroku git:remote --app heroku-sample-v1
 21. Rename the app
     heroku apps:rename newname
+22. Clear the build cache
+    heroku plugins:install heroku-repo
+    heroku repo:purge_cache -a appname
+    git commit --allow-empty -m "Purge cache"
+    git push heroku master
